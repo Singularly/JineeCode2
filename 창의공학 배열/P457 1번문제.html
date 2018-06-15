@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <body>
+   <script>
+       
+       var data = [];
+       var sum = 0, aver;
+ 
+       document.write("배열값 : ");
+   
+    
+      for(i=0; i<=6; i++)
+           {
+              score = parseInt(prompt("점수 입력"));
+               
+               data[i] = score;
+               
+               document.write( data[i] + " ");
+               
+               sum = sum + data[i];
+              
+               
+           }
+       
+        
+        aver = sum / data.length;
+        document.write("<BR> 총점: " + sum + "<BR> 평균 : " + aver);
+       
+       
+            
+        
+    
+    </script>
+    </body>    
+</html>

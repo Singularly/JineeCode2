@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <body>
+   <script>
+       
+       var n = ["kim","park","oh","lim","pang","seo","lee","yang","bae","back"];
+       
+       
+        document.write("정렬 전 : ")
+        
+        for(i=0; i< n.length; i++)
+          {
+              if(i==0)
+                  { 
+                      for(j=0; j< n.length; j++)
+                          
+                    { document.write( n[j] + " "); }
+                      
+                      document.write("<BR> 정렬 후 : ");
+                      
+                  n.sort(function(a, b) {                    
+                          return a.localeCompare(b);          
+                      });
+                      
+                  }
+                      
+              document.write(n[i] + " ");
+          }
+                    
+    </script>
+    </body>    
+</html>
+

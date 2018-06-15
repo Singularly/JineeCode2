@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <body>
+   <script>
+       
+       var n = [234,44,89,678,55,785,66,88];
+       var aver, sum=0, count=1;
+       
+       n.sort(function(a,b)
+             {
+                 return b-a;
+             });
+       
+      while(count < n.length-1)
+          {
+              sum = sum + n[count];
+              count += 1;
+          }
+       
+       aver = sum / (n.length-2);
+       
+       document.write("가장 큰 값과 작은 값을 제외한 합 :" + sum + "<BR> 가장 작은 값을 제외한 평균 : " + aver);
+     
+    </script>
+    </body>    
+</html>

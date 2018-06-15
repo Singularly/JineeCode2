@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <body>
+   <script>
+       
+       var n = [33,2,189,72,7,91,5,14,17,9];
+       var temp; 
+       
+     document.write("초기 배열 값 : ")
+       
+      for(i=0; i< n.length; i++)
+          {
+              if(i==0)
+                  { 
+                      for(j=0; j< n.length; j++)
+                          
+                    { document.write( n[j] + " "); }
+                      
+                      document.write("<BR>이동 후 배열 값 : ");
+                      temp = n[i];
+                      continue;
+                   }
+              
+                 if(i == n.length-1)
+                 { n[i] = temp; }
+              
+             document.write( n[i] + " ");
+              
+           }
+     
+    </script>
+    </body>    
+</html>
